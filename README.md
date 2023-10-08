@@ -1,4 +1,5 @@
-# OfficeShop - Hacktoberfest 2023
+# OfficeShop - Hacktoberfest 2023!
+Make your first Pull Request on Hacktoberfest 2023. Don't forget to spread love and if you like give us a ⭐️
 Welcome to the OfficeShop GitHub repository! This project is dedicated to the celebration of Hacktoberfest 2023 and aims to create a web application for shopping related to office supplies. Here, users can easily find and purchase all the office essentials they need.
 
 # Project Overview
