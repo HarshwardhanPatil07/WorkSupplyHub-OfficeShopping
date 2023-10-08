@@ -8,27 +8,27 @@ Hacktoberfest 2023: This repository is participating in Hacktoberfest 2023, an a
 The OfficeShop is a web-based platform designed to make shopping for office supplies a breeze. Whether you're running a small home office or managing a large corporate workspace, our website offers a wide range of office-related products to cater to your needs. From stationery and desk accessories to office furniture and tech gadgets, we've got it all!
 
 # Features
-Product Categories: Browse through various categories of office supplies.
-Search Functionality: Easily find specific items using our search bar.
-Product Details: View detailed information about each product.
-Add to Cart: Add items to your shopping cart for a seamless shopping experience.
-Secure Checkout: Safely complete your purchase with our secure payment system.
-User Accounts: Register and log in to manage your orders and save your preferences.
+- Product Categories: Browse through various categories of office supplies.
+- Search Functionality: Easily find specific items using our search bar.
+- Product Details: View detailed information about each product.
+- Add to Cart: Add items to your shopping cart for a seamless shopping experience.
+- Secure Checkout: Safely complete your purchase with our secure payment system.
+- User Accounts: Register and log in to manage your orders and save your preferences.
 Hacktoberfest 2023 Contributions: Contribute to this project during Hacktoberfest 2023 by improving existing features, fixing bugs, or adding new functionality. Your contributions are welcome!
 # How to Contribute
 We welcome contributions from developers of all skill levels. Whether you're an experienced developer or just getting started, there are various ways you can contribute to this project during Hacktoberfest 2023:
 
-Create or Improve Documentation: Help us enhance the project's documentation to make it more user-friendly and informative.
+- Create or Improve Documentation: Help us enhance the project's documentation to make it more user-friendly and informative.
 
-Fix Bugs: If you come across any bugs or issues, please report them or, even better, submit a pull request to fix them.
+- Fix Bugs: If you come across any bugs or issues, please report them or, even better, submit a pull request to fix them.
 
-Add Features: Have a great idea for a new feature? Feel free to implement it and submit a pull request.
+- Add Features: Have a great idea for a new feature? Feel free to implement it and submit a pull request.
 
-Improve UI/UX: Enhance the user interface and user experience of the website.
+- Improve UI/UX: Enhance the user interface and user experience of the website.
 
-Performance Optimization: Optimize the codebase for better performance.
+- Performance Optimization: Optimize the codebase for better performance.
 
-Testing: Help us test the application and identify any issues or areas for improvement.
+- Testing: Help us test the application and identify any issues or areas for improvement.
 
 To get started, fork this repository, make your changes, and submit a pull request. Don't forget to follow the Hacktoberfest guidelines when making contributions.
 
