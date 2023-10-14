@@ -21,15 +21,15 @@ body {
   align-items: center;
 }
 .container {
+  background: white;
   gap: 50px;
   width: 500px;
   min-width: 200px;
   height: fit-content;
-  padding: 15px 10px;
-  /* border: 2px solid rgb(231, 231, 231); */
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
   border-radius: 10px;
 }
+
 h1 {
   font-size: 50px;
 }
@@ -61,4 +61,27 @@ form {
 .new {
   color: blue;
   cursor: pointer;
+}
+.btn {
+  background: blue;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+}
+.logIn {
+  background: url("./images/bgOne.webp") center center/cover no-repeat;
+}
+.signIn {
+  background: url("./images/bgTwo.jpg") center center/cover no-repeat;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
+  .btn {
+    width: 100%;
+  }
 }
