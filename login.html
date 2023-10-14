@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="loginStyle.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form action="./backEnd2.php" method="POST">
+        <div class="inDiv">
+          <label for="userName" class="userLabel">Username:</label>
+          <input type="text" class="user" id="userName" name="userName" required/>
+        </div>
+        <div class="inDiv">
+          <label for="password" class="passLabel">Password:</label>
+          <input type="password" class="pass" id="password" name="password" required/>
+        </div>
+        <p class="newUser">
+          New user ?
+          <a class="new" href="./signin.html">Signin here</a>
+        </p>
+        <button type="submit">Signin</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  user-select: none;
+}
+.inDiv,
+form,
+.container,
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+.container {
+  gap: 50px;
+  width: 500px;
+  min-width: 200px;
+  height: fit-content;
+  padding: 15px 10px;
+  /* border: 2px solid rgb(231, 231, 231); */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 50px;
+}
+form {
+  gap: 20px;
+  width: 100%;
+}
+.inDiv {
+  width: 100%;
+  gap: 10px;
+}
+.userLabel,
+.passLabel {
+  font-size: large;
+}
+.user,
+.pass {
+  padding: 10px 5px;
+  font-size: small;
+  width: 100%;
+  outline: none;
+  border: 2px solid rgb(231, 231, 231);
+  border-radius: 10px;
+}
+.newUser {
+  font-size: large;
+  font-weight: bolder;
+}
+.new {
+  color: blue;
+  cursor: pointer;
+}
