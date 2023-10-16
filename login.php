@@ -1,40 +1,66 @@
 <?php
-// Database configuration
-$dbHost = "localhost";
-$dbUser = "root";
-$dbPass = "";
-$dbName = "login";
-
-// Create a database connection
-$conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-// Handle form submission
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-
-    // You should hash the password before storing it in the database.
-    // For simplicity, we won't hash it here.
-    
-    // Perform a SQL query to check if the user exists
-    $sql = "SELECT * FROM login WHERE email = '$email' AND password = '$password'";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows == 1) {
-        // User found, redirect to a success page
-        header("Location: index.html");
-        exit();
-    } else {
-        // User not found, display an error message
-        echo "Invalid username or password.";
+include 'dbConnect.php';
+// Check if the form has been submitted
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  $userName = $_POST['userName'];
+  $password = $_POST['password'];
+  // Check if user exists or not
+  $sql      = "Select * from `signindata` where username='$userName'";
+  $result   = mysqli_query($conn, $sql);
+  $num      = mysqli_num_rows($result);
+  if ($num == 1) {
+    while ($row = mysqli_fetch_assoc($result)) {
+      if (password_verify($password, $row['pass'])) {
+        session_start();
+        $_SESSION['loggedin'] = true;
+        $_SESSION['show'] = true;
+        header("location: index.php");
+      } else {
+        $msg = "Check your password or username";
+      }
     }
+  } else {
+    $msg = "Check your password or username";
+  }
 }
-
-// Close the database connection
-$conn->close();
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="loginStyle.css" />
+  <title>Login</title>
+</head>
+
+<body class="logIn">
+  <div class="container">
+    <?php
+    if (isset($msg)) {
+      echo '<h3 style="color:red">' . $msg . '</h3>';
+      unset($msg);
+    } else {
+      echo '<h1>Login</h1>';
+    }
+    ?>
+    <form action="./login.php" method="POST">
+      <div class="inDiv">
+        <label for="userName" class="userLabel">Username:</label>
+        <input type="text" class="user" id="userName" name="userName" required />
+      </div>
+      <div class="inDiv">
+        <label for="password" class="passLabel">Password:</label>
+        <input type="password" class="pass" id="password" name="password" required />
+      </div>
+      <p class="newUser">
+        New user ?
+        <a class="new" href="./signin.php">Signin here</a>
+      </p>
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+</body>
+
+</html>
