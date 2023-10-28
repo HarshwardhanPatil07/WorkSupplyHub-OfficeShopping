@@ -49,13 +49,13 @@ class Cart {
             $result = $this->insertIntoCart($params, $table);
             if($result){
                 // header("Location:".$_SERVER['REQUEST_URI']);
-                echo "<script>location.href='cart.php';</script>";
+                echo "<script>location.href='./scripts/Cart.php';</script>";
             }
         }
     }
 
 
-    public function deleteCartItem($user_id = null, $product_id = null, $table = 'cart', $location = 'cart.php') {
+    public function deleteCartItem($user_id = null, $product_id = null, $table = 'cart', $location = './scripts/./scripts/Cart.php') {
         if($product_id != null){
             $result = $this->db->con->query("DELETE FROM {$table} WHERE `user_id` = {$user_id} AND `product_id` = {$product_id}");
             if($result){
@@ -75,7 +75,7 @@ class Cart {
             $result = $this->db->con->multi_query($query);
             if($result){
                 // header("Location:".$_SERVER['PHP_SELF']);
-                echo "<script>location.href = 'cart.php'; </script>";
+                echo "<script>location.href = './scripts/Cart.php'; </script>";
             }
         }
         return $result;
