@@ -2,7 +2,8 @@
 Make your first Pull Request on Hacktoberfest 2023. Don't forget to spread love and if you like give us a ⭐️
 Welcome to the OfficeShop GitHub repository! This project is dedicated to the celebration of Hacktoberfest 2023 and aims to create a web application for shopping related to office supplies. Here, users can easily find and purchase all the office essentials they need.
 
-![OfficeShop-home](screencapture-127-0-0-1-5500-ShopingOffice-index-html-2023-10-28-13_26_42.png)
+![home-page](https://github.com/shivang21007/WorkSupplyHub-OfficeShopping/assets/98748694/cf4f6267-fef6-48b0-8493-d233a170c5ba)
+
 
 # Project Overview
 Project Name: OfficeShop
@@ -38,7 +39,8 @@ To get started, fork this repository, make your changes, and submit a pull reque
 # Getting Started
 To run the OfficeShop locally, follow these steps:
 - First Fork this repo
-![fork](image.png)
+![fork-image](https://github.com/shivang21007/WorkSupplyHub-OfficeShopping/assets/98748694/ff3a6874-acac-42a6-bc8d-92f237832f6a)
+
 Clone this repository to your local machine.
 
 - bash Copy code
