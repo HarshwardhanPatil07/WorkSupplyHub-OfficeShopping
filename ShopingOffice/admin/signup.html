@@ -1,85 +1,145 @@
 <!DOCTYPE html>
-<html dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>Admin</title>
-    <link href="dist/css/style.min.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li,
+        button {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Main content styles */
+        .main-content {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .main-content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 90%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="submit"] {
+            width: 96%;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #444;
+        }
+
+        .form-group p {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Footer styles */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="main-wrapper">
-        <div class="preloader">
-            <div class="lds-ripple">
-                <div class="lds-pos"></div>
-                <div class="lds-pos"></div>
-            </div>
-        </div>
-        <div class="auth-wrapper d-flex no-block justify-content-center align-items-center position-relative"
-            style="background:url(assets/images/big/auth-bg.jpg) no-repeat center center;">
-            <div class="auth-box row">
-                <div class="col-lg-7 col-md-5 modal-bg-img" style="background-image: url(assets/images/big/3.jpg);"></div>
-                <div class="col-lg-5 col-md-7 bg-white">
-                    <div class="p-3">
-                        <div class="text-center">
-                            <img src="assets/images/big/icon.png" alt="wrapkit">
-                        </div>
-                        <h2 class="mt-3 text-center">Sign Up</h2>
-                        <p class="text-center">Create your account to access the admin panel.</p>
-                        <form class="mt-4" method="post" action="../signup.php">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!-- <div class="form-group">
-                                        <label class="text-dark" for="full-name">Full Name</label>
-                                        <input class="form-control" id="full-name" type="text" placeholder="Enter your full name">
-                                    </div> -->
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <label class="text-dark" for="email-phone">Email</label>
-                                        <input class="form-control" name="email" id="email-phone" type="text" placeholder="Enter your email or phone number">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <label class="text-dark" for="username">Username</label>
-                                        <input class="form-control" id="username" name="username" type="text" placeholder="Enter your username">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <label class="text-dark" for="password">Password</label>
-                                        <input class="form-control" id="password" name="password" type="password" placeholder="Enter your password">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 text-center">
-                                    <button class="btn btn-block btn-dark" type="submit">Sign Up</button>
-                                </div>
-                                <div class="col-lg-12 text-center mt-3">
-                                    Already have an account? <a href="userlogin.html" class="text-danger">Sign In</a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <header>
+        <div class="logo">Your Logo</div>
+        <nav>
+            <ul>
+                <li><a href="../main.html">Home</a></li>
+                <li><a href="../about us.html">About Us</a></li>
+                <li><a href="../contact us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <center>
+            <h2 style="font-size:300%;">For Students</h2>
+            <br>
+          </center>
+        <div class="main-content">
+            <h1>Sign Up</h1>
+            <form action="signup.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" required>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="confirm_password" required>
+                </div>
+                <!-- <div class="form-group">
+                    <input type="submit" value="Sign Up">
+                </div> -->
+                <center><input type="submit" value="sign up"></center>
+
+            </form>
+            <p>Already have an account? <a href="../main.html#student-email">Log In</a></p>
         </div>
-    </div>
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(".preloader").fadeOut();
-    </script>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../main.html">Home</a></li>&emsp;&emsp;
+                <li><a href="../about us.html">About Us</a></li>&emsp;&emsp;
+                <li><a href="../contact us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
